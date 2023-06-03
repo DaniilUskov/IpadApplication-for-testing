@@ -17,6 +17,7 @@
 		AFCA95C42A2A356C001D2979 /* IpadApplicationUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFCA95C32A2A356C001D2979 /* IpadApplicationUITestsLaunchTests.swift */; };
 		AFCA95D12A2B2D90001D2979 /* IpadInformationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFCA95D02A2B2D90001D2979 /* IpadInformationViewController.swift */; };
 		AFCA95D42A2B3A9F001D2979 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AFCA95D32A2B3A9F001D2979 /* CoreLocation.framework */; };
+		AFCA95D82A2B5259001D2979 /* LocationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFCA95D72A2B5259001D2979 /* LocationManager.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +52,7 @@
 		AFCA95C32A2A356C001D2979 /* IpadApplicationUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IpadApplicationUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		AFCA95D02A2B2D90001D2979 /* IpadInformationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IpadInformationViewController.swift; sourceTree = "<group>"; };
 		AFCA95D32A2B3A9F001D2979 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
+		AFCA95D72A2B5259001D2979 /* LocationManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationManager.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -110,6 +112,7 @@
 				AFCA95AB2A2A356C001D2979 /* LaunchScreen.storyboard */,
 				AFCA95AE2A2A356C001D2979 /* Info.plist */,
 				AFCA95D02A2B2D90001D2979 /* IpadInformationViewController.swift */,
+				AFCA95D72A2B5259001D2979 /* LocationManager.swift */,
 			);
 			path = IpadApplication;
 			sourceTree = "<group>";
@@ -270,6 +273,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AFCA95D82A2B5259001D2979 /* LocationManager.swift in Sources */,
 				AFCA95A12A2A356B001D2979 /* AppDelegate.swift in Sources */,
 				AFCA95D12A2B2D90001D2979 /* IpadInformationViewController.swift in Sources */,
 				AFCA95A32A2A356B001D2979 /* SceneDelegate.swift in Sources */,
