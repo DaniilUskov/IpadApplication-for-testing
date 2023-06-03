@@ -12,6 +12,10 @@ class IpadInformationViewController: UIViewController, CLLocationManagerDelegate
     
     @IBOutlet weak var GeopositionVIew: UIView!
     @IBOutlet weak var mapInformation: UILabel!
+    @IBOutlet weak var modelInfo: UILabel!
+    @IBOutlet weak var versionInfo: UILabel!
+    
+    let ipadInfo: UIDevice = UIDevice()
     
     private let map:MKMapView = {
         let map = MKMapView()
@@ -23,6 +27,7 @@ class IpadInformationViewController: UIViewController, CLLocationManagerDelegate
         GeopositionVIew.addSubview(map)
         title = "Home"
         self.mapInformation.text = "Загрузка..."
+        fillIpadInfo()
         
         LocationManager.shared.gerUserLocation{ [weak self] location in
             DispatchQueue.main.async{
@@ -56,7 +61,20 @@ class IpadInformationViewController: UIViewController, CLLocationManagerDelegate
             if var text = self?.mapInformation.text{
                 text += ", Координаты: широта - \(String(location.coordinate.latitude)), долгота - \(String(location.coordinate.longitude))"
                 self?.mapInformation.text = text
+                self?.mapInformation.numberOfLines = 2
             }
+        }
+    }
+    
+    func fillIpadInfo(){
+        if var text = modelInfo.text{
+            text += "\(ipadInfo.model)"
+            modelInfo.text = text
+        }
+        
+        if var text = versionInfo.text{
+            text += "\(ipadInfo.systemVersion)"
+            versionInfo.text = text
         }
     }
 }
