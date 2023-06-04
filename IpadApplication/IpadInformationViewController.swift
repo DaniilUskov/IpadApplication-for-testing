@@ -14,6 +14,9 @@ class IpadInformationViewController: UIViewController, CLLocationManagerDelegate
     @IBOutlet weak var mapInformation: UILabel!
     @IBOutlet weak var modelInfo: UILabel!
     @IBOutlet weak var versionInfo: UILabel!
+    @IBOutlet weak var coordinatesInfo: UILabel!
+    @IBOutlet weak var ipadName: UILabel!
+    @IBOutlet weak var ipadSystemName: UILabel!
     
     let ipadInfo: UIDevice = UIDevice()
     
@@ -58,10 +61,9 @@ class IpadInformationViewController: UIViewController, CLLocationManagerDelegate
         
         LocationManager.shared.resolveLocationName(with: location) { [weak self] locationName in
             self?.mapInformation.text = locationName
-            if var text = self?.mapInformation.text{
+            if var text = self?.coordinatesInfo.text{
                 text += ", Координаты: широта - \(String(location.coordinate.latitude)), долгота - \(String(location.coordinate.longitude))"
-                self?.mapInformation.text = text
-                self?.mapInformation.numberOfLines = 2
+                self?.coordinatesInfo.text = text
             }
         }
     }
@@ -75,6 +77,16 @@ class IpadInformationViewController: UIViewController, CLLocationManagerDelegate
         if var text = versionInfo.text{
             text += "\(ipadInfo.systemVersion)"
             versionInfo.text = text
+        }
+        
+        if var text = ipadName.text{
+            text += "\(ipadInfo.name)"
+            ipadName.text = text
+        }
+        
+        if var text = ipadSystemName.text{
+            text += "\(ipadInfo.systemName)"
+            ipadSystemName.text = text
         }
     }
 }

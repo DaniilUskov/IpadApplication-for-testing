@@ -30,6 +30,12 @@
                                 <color key="textColor" systemColor="systemGroupedBackgroundColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Загрузка..." textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xjn-1k-Z0w">
+                                <rect key="frame" x="10" y="646" width="744" height="32.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="27"/>
+                                <color key="textColor" systemColor="systemGroupedBackgroundColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="vyR-wI-OHX">
                                 <rect key="frame" x="0.0" y="791" width="744" height="264"/>
                                 <subviews>
@@ -48,11 +54,27 @@
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Имя устройства:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bjp-m4-1e2" userLabel="ipadName">
+                                        <rect key="frame" x="305.5" y="122" width="133" height="21"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Имя системы:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MU5-KB-REj" userLabel="ipadNameSystem">
+                                        <rect key="frame" x="316" y="151" width="112" height="21"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
                                 </subviews>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <constraints>
                                     <constraint firstItem="XQz-0p-ATJ" firstAttribute="centerX" secondItem="vyR-wI-OHX" secondAttribute="centerX" id="0o0-rN-Rut"/>
+                                    <constraint firstItem="MU5-KB-REj" firstAttribute="top" secondItem="bjp-m4-1e2" secondAttribute="bottom" constant="8" symbolic="YES" id="DLA-Y2-Vgp"/>
                                     <constraint firstItem="Z1M-NO-CzK" firstAttribute="centerX" secondItem="vyR-wI-OHX" secondAttribute="centerX" id="N5H-Hp-csd"/>
+                                    <constraint firstItem="bjp-m4-1e2" firstAttribute="centerX" secondItem="vyR-wI-OHX" secondAttribute="centerX" id="Vu2-GK-2M5"/>
+                                    <constraint firstItem="bjp-m4-1e2" firstAttribute="top" secondItem="XQz-0p-ATJ" secondAttribute="bottom" constant="14.5" id="ffn-Ee-Uea"/>
+                                    <constraint firstItem="MU5-KB-REj" firstAttribute="centerX" secondItem="vyR-wI-OHX" secondAttribute="centerX" id="hai-tg-K0b"/>
                                     <constraint firstItem="XQz-0p-ATJ" firstAttribute="top" secondItem="Z1M-NO-CzK" secondAttribute="bottom" constant="8" symbolic="YES" id="rwU-jK-3PC"/>
                                     <constraint firstItem="Z1M-NO-CzK" firstAttribute="top" secondItem="vyR-wI-OHX" secondAttribute="top" constant="25" id="xpV-a2-AGE"/>
                                 </constraints>
@@ -63,7 +85,7 @@
                                 <color key="textColor" systemColor="systemBackgroundColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="IHC-q4-q5d" userLabel="GeopositionContainer">
+                            <view contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="IHC-q4-q5d" userLabel="GeopositionContainer">
                                 <rect key="frame" x="0.0" y="58" width="744" height="521"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                             </view>
@@ -74,17 +96,18 @@
                             <constraint firstItem="3tr-cl-3Ia" firstAttribute="leading" secondItem="nLB-Pf-BlS" secondAttribute="leading" constant="319.5" id="2HE-2c-3M4"/>
                             <constraint firstItem="IHC-q4-q5d" firstAttribute="top" secondItem="x9x-Te-1Li" secondAttribute="top" constant="58" id="3z5-zG-A7g"/>
                             <constraint firstAttribute="bottom" secondItem="IHC-q4-q5d" secondAttribute="bottom" constant="554" id="4MS-wm-LSE"/>
-                            <constraint firstItem="IHC-q4-q5d" firstAttribute="leading" secondItem="vyR-wI-OHX" secondAttribute="leading" id="4Tr-1J-SGT"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="GIc-72-wZ9" secondAttribute="trailing" constant="-30" id="5aH-Rd-y3E"/>
+                            <constraint firstItem="GIc-72-wZ9" firstAttribute="trailing" secondItem="xjn-1k-Z0w" secondAttribute="trailing" id="6bB-OC-tdF"/>
                             <constraint firstItem="a52-nX-8Vv" firstAttribute="centerX" secondItem="nLB-Pf-BlS" secondAttribute="centerX" id="G8Q-lv-EmX"/>
-                            <constraint firstItem="GIc-72-wZ9" firstAttribute="leading" secondItem="nLB-Pf-BlS" secondAttribute="leading" constant="10" id="J1V-LU-kLo"/>
-                            <constraint firstItem="GIc-72-wZ9" firstAttribute="trailing" secondItem="nLB-Pf-BlS" secondAttribute="trailing" constant="10" id="J7E-Lk-0al"/>
-                            <constraint firstItem="IHC-q4-q5d" firstAttribute="trailing" secondItem="vyR-wI-OHX" secondAttribute="trailing" id="KSP-YO-8Yh"/>
+                            <constraint firstItem="GIc-72-wZ9" firstAttribute="leading" secondItem="xjn-1k-Z0w" secondAttribute="leading" id="IVE-cm-bGb"/>
+                            <constraint firstItem="GIc-72-wZ9" firstAttribute="top" secondItem="IHC-q4-q5d" secondAttribute="bottom" constant="27" id="K7V-48-Mia"/>
                             <constraint firstItem="IHC-q4-q5d" firstAttribute="leading" secondItem="nLB-Pf-BlS" secondAttribute="leading" constant="15" id="LgL-1B-BOJ"/>
+                            <constraint firstItem="a52-nX-8Vv" firstAttribute="top" secondItem="xjn-1k-Z0w" secondAttribute="bottom" constant="57.5" id="One-s5-CF2"/>
                             <constraint firstItem="IHC-q4-q5d" firstAttribute="top" secondItem="3tr-cl-3Ia" secondAttribute="bottom" constant="8" symbolic="YES" id="Qjl-0y-OnJ"/>
+                            <constraint firstItem="GIc-72-wZ9" firstAttribute="leading" secondItem="nLB-Pf-BlS" secondAttribute="leading" constant="10" id="hh7-kq-GR4"/>
+                            <constraint firstItem="xjn-1k-Z0w" firstAttribute="top" secondItem="GIc-72-wZ9" secondAttribute="bottom" constant="7.5" id="jBM-fY-dtk"/>
                             <constraint firstItem="vyR-wI-OHX" firstAttribute="centerX" secondItem="nLB-Pf-BlS" secondAttribute="centerX" id="joG-PN-AhG"/>
                             <constraint firstItem="nLB-Pf-BlS" firstAttribute="bottom" secondItem="vyR-wI-OHX" secondAttribute="bottom" constant="58" id="pzJ-Ms-uBw"/>
-                            <constraint firstItem="a52-nX-8Vv" firstAttribute="top" secondItem="GIc-72-wZ9" secondAttribute="bottom" constant="97.5" id="q5V-gE-Rje"/>
-                            <constraint firstItem="GIc-72-wZ9" firstAttribute="top" secondItem="IHC-q4-q5d" secondAttribute="bottom" constant="27" id="uh1-js-yaY"/>
                             <constraint firstItem="vyR-wI-OHX" firstAttribute="top" secondItem="a52-nX-8Vv" secondAttribute="bottom" constant="25" id="xNp-r0-zMt"/>
                             <constraint firstItem="IHC-q4-q5d" firstAttribute="trailing" secondItem="nLB-Pf-BlS" secondAttribute="trailing" constant="15" id="yos-RA-u1V"/>
                             <constraint firstItem="nLB-Pf-BlS" firstAttribute="trailing" secondItem="vyR-wI-OHX" secondAttribute="trailing" id="zXk-2h-PDy"/>
@@ -92,6 +115,9 @@
                     </view>
                     <connections>
                         <outlet property="GeopositionVIew" destination="IHC-q4-q5d" id="se9-xd-DWy"/>
+                        <outlet property="coordinatesInfo" destination="xjn-1k-Z0w" id="YUi-Fc-GgR"/>
+                        <outlet property="ipadName" destination="bjp-m4-1e2" id="Z3t-j4-0ha"/>
+                        <outlet property="ipadSystemName" destination="MU5-KB-REj" id="OOY-am-Esm"/>
                         <outlet property="mapInformation" destination="GIc-72-wZ9" id="QjP-0l-Cxw"/>
                         <outlet property="modelInfo" destination="XQz-0p-ATJ" id="5mh-yE-FH2"/>
                         <outlet property="versionInfo" destination="Z1M-NO-CzK" id="xRm-6Y-rbW"/>
