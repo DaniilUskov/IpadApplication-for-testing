@@ -62,7 +62,7 @@ class IpadInformationViewController: UIViewController, CLLocationManagerDelegate
         LocationManager.shared.resolveLocationName(with: location) { [weak self] locationName in
             self?.mapInformation.text = locationName
             if var text = self?.coordinatesInfo.text{
-                text += ", Координаты: широта - \(String(location.coordinate.latitude)), долгота - \(String(location.coordinate.longitude))"
+                text = "Координаты: широта - \(String(location.coordinate.latitude)), долгота - \(String(location.coordinate.longitude))"
                 self?.coordinatesInfo.text = text
             }
         }
