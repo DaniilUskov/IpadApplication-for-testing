@@ -12,7 +12,6 @@
         <!--Ipad Information View Controller-->
         <scene sceneID="9jp-8V-6Ba">
             <objects>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="nV1-Cs-8e1" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
                 <viewController id="est-IP-mpV" customClass="IpadInformationViewController" customModule="IpadApplication" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="x9x-Te-1Li">
                         <rect key="frame" x="0.0" y="0.0" width="744" height="1133"/>
@@ -36,8 +35,18 @@
                                 <color key="textColor" systemColor="systemGroupedBackgroundColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Информация об устройстве" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="a52-nX-8Vv">
+                                <rect key="frame" x="201" y="736" width="342" height="30"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="25"/>
+                                <color key="textColor" systemColor="systemBackgroundColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="IHC-q4-q5d" userLabel="GeopositionContainer">
+                                <rect key="frame" x="15" y="58" width="714" height="521"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                            </view>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="vyR-wI-OHX">
-                                <rect key="frame" x="0.0" y="791" width="744" height="264"/>
+                                <rect key="frame" x="15" y="790" width="714" height="264"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Версия IOS:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Z1M-NO-CzK" userLabel="systemVersion">
                                         <rect key="frame" x="307.5" y="25" width="129" height="54"/>
@@ -69,25 +78,15 @@
                                 </subviews>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <constraints>
-                                    <constraint firstItem="XQz-0p-ATJ" firstAttribute="centerX" secondItem="vyR-wI-OHX" secondAttribute="centerX" id="0o0-rN-Rut"/>
+                                    <constraint firstItem="XQz-0p-ATJ" firstAttribute="centerX" secondItem="vyR-wI-OHX" secondAttribute="centerX" constant="15" id="0o0-rN-Rut"/>
                                     <constraint firstItem="bjp-m4-1e2" firstAttribute="top" secondItem="XQz-0p-ATJ" secondAttribute="bottom" constant="24" id="2IP-pz-tlw"/>
-                                    <constraint firstItem="Z1M-NO-CzK" firstAttribute="centerX" secondItem="vyR-wI-OHX" secondAttribute="centerX" id="N5H-Hp-csd"/>
-                                    <constraint firstItem="bjp-m4-1e2" firstAttribute="centerX" secondItem="vyR-wI-OHX" secondAttribute="centerX" id="Vu2-GK-2M5"/>
-                                    <constraint firstItem="MU5-KB-REj" firstAttribute="centerX" secondItem="vyR-wI-OHX" secondAttribute="centerX" id="hai-tg-K0b"/>
+                                    <constraint firstItem="Z1M-NO-CzK" firstAttribute="centerX" secondItem="vyR-wI-OHX" secondAttribute="centerX" constant="15" id="N5H-Hp-csd"/>
+                                    <constraint firstItem="bjp-m4-1e2" firstAttribute="centerX" secondItem="vyR-wI-OHX" secondAttribute="centerX" constant="15" id="Vu2-GK-2M5"/>
+                                    <constraint firstItem="MU5-KB-REj" firstAttribute="centerX" secondItem="vyR-wI-OHX" secondAttribute="centerX" constant="15" id="hai-tg-K0b"/>
                                     <constraint firstItem="XQz-0p-ATJ" firstAttribute="top" secondItem="Z1M-NO-CzK" secondAttribute="bottom" constant="8" symbolic="YES" id="rwU-jK-3PC"/>
                                     <constraint firstItem="Z1M-NO-CzK" firstAttribute="top" secondItem="vyR-wI-OHX" secondAttribute="top" constant="25" id="xpV-a2-AGE"/>
                                     <constraint firstItem="MU5-KB-REj" firstAttribute="top" secondItem="bjp-m4-1e2" secondAttribute="bottom" constant="24" id="yD2-rA-ygp"/>
                                 </constraints>
-                            </view>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Информация об устройстве" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="a52-nX-8Vv">
-                                <rect key="frame" x="201" y="736" width="342" height="30"/>
-                                <fontDescription key="fontDescription" type="boldSystem" pointSize="25"/>
-                                <color key="textColor" systemColor="systemBackgroundColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="IHC-q4-q5d" userLabel="GeopositionContainer">
-                                <rect key="frame" x="0.0" y="58" width="744" height="521"/>
-                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                             </view>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="nLB-Pf-BlS"/>
@@ -98,21 +97,21 @@
                             <constraint firstItem="GIc-72-wZ9" firstAttribute="trailing" secondItem="xjn-1k-Z0w" secondAttribute="trailing" id="6bB-OC-tdF"/>
                             <constraint firstItem="IHC-q4-q5d" firstAttribute="top" secondItem="x9x-Te-1Li" secondAttribute="top" constant="58" id="AYS-lJ-FmN"/>
                             <constraint firstItem="GIc-72-wZ9" firstAttribute="top" secondItem="IHC-q4-q5d" secondAttribute="bottom" constant="27" id="C9D-tV-DK6"/>
+                            <constraint firstItem="IHC-q4-q5d" firstAttribute="leading" secondItem="vyR-wI-OHX" secondAttribute="leading" id="FlE-3P-7KF"/>
                             <constraint firstItem="a52-nX-8Vv" firstAttribute="centerX" secondItem="nLB-Pf-BlS" secondAttribute="centerX" id="G8Q-lv-EmX"/>
                             <constraint firstItem="GIc-72-wZ9" firstAttribute="leading" secondItem="xjn-1k-Z0w" secondAttribute="leading" id="IVE-cm-bGb"/>
                             <constraint firstItem="a52-nX-8Vv" firstAttribute="top" secondItem="xjn-1k-Z0w" secondAttribute="bottom" constant="57.5" id="One-s5-CF2"/>
                             <constraint firstItem="IHC-q4-q5d" firstAttribute="top" secondItem="3tr-cl-3Ia" secondAttribute="bottom" constant="8" symbolic="YES" id="aON-uI-nIf"/>
                             <constraint firstAttribute="bottom" secondItem="IHC-q4-q5d" secondAttribute="bottom" constant="554" id="dwe-Ba-jHz"/>
+                            <constraint firstItem="IHC-q4-q5d" firstAttribute="trailing" secondItem="vyR-wI-OHX" secondAttribute="trailing" id="gLO-1o-Gga"/>
                             <constraint firstItem="GIc-72-wZ9" firstAttribute="leading" secondItem="nLB-Pf-BlS" secondAttribute="leading" constant="10" id="hh7-kq-GR4"/>
                             <constraint firstItem="xjn-1k-Z0w" firstAttribute="top" secondItem="GIc-72-wZ9" secondAttribute="bottom" constant="7.5" id="jBM-fY-dtk"/>
-                            <constraint firstItem="vyR-wI-OHX" firstAttribute="trailing" secondItem="nLB-Pf-BlS" secondAttribute="trailing" constant="30" id="jVo-7p-H7b"/>
+                            <constraint firstItem="vyR-wI-OHX" firstAttribute="trailing" secondItem="nLB-Pf-BlS" secondAttribute="trailing" constant="-15" id="jVo-7p-H7b"/>
                             <constraint firstItem="vyR-wI-OHX" firstAttribute="centerX" secondItem="nLB-Pf-BlS" secondAttribute="centerX" id="joG-PN-AhG"/>
-                            <constraint firstItem="IHC-q4-q5d" firstAttribute="trailing" secondItem="vyR-wI-OHX" secondAttribute="trailing" id="pZK-re-Pq8"/>
-                            <constraint firstItem="nLB-Pf-BlS" firstAttribute="bottom" secondItem="vyR-wI-OHX" secondAttribute="bottom" constant="58" id="pzJ-Ms-uBw"/>
-                            <constraint firstItem="vyR-wI-OHX" firstAttribute="leading" secondItem="nLB-Pf-BlS" secondAttribute="leading" constant="30" id="vax-Ym-Zt3"/>
-                            <constraint firstItem="vyR-wI-OHX" firstAttribute="top" secondItem="a52-nX-8Vv" secondAttribute="bottom" constant="25" id="xNp-r0-zMt"/>
-                            <constraint firstItem="IHC-q4-q5d" firstAttribute="leading" secondItem="vyR-wI-OHX" secondAttribute="leading" id="yEK-PG-UxV"/>
-                            <constraint firstItem="nLB-Pf-BlS" firstAttribute="trailing" secondItem="vyR-wI-OHX" secondAttribute="trailing" id="zXk-2h-PDy"/>
+                            <constraint firstItem="nLB-Pf-BlS" firstAttribute="bottom" secondItem="vyR-wI-OHX" secondAttribute="bottom" constant="59" id="pzJ-Ms-uBw"/>
+                            <constraint firstItem="vyR-wI-OHX" firstAttribute="leading" secondItem="nLB-Pf-BlS" secondAttribute="leading" constant="15" id="vax-Ym-Zt3"/>
+                            <constraint firstItem="vyR-wI-OHX" firstAttribute="top" secondItem="a52-nX-8Vv" secondAttribute="bottom" constant="24" id="xNp-r0-zMt"/>
+                            <constraint firstItem="nLB-Pf-BlS" firstAttribute="trailing" secondItem="vyR-wI-OHX" secondAttribute="trailing" constant="15" id="zXk-2h-PDy"/>
                         </constraints>
                     </view>
                     <connections>
@@ -125,6 +124,7 @@
                         <outlet property="versionInfo" destination="Z1M-NO-CzK" id="xRm-6Y-rbW"/>
                     </connections>
                 </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="nV1-Cs-8e1" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-194.35483870967741" y="-44.748455428067075"/>
         </scene>
