@@ -7,7 +7,7 @@
 import CoreLocation
 import Foundation
 
-class LocationManager: NSObject, CLLocationManagerDelegate {
+public class LocationManager: NSObject, CLLocationManagerDelegate {
     static let shared = LocationManager()
     
     let manager = CLLocationManager()
@@ -20,7 +20,7 @@ class LocationManager: NSObject, CLLocationManagerDelegate {
         manager.startUpdatingLocation()
     }
     
-    public func resolveLocationName(with location: CLLocation,
+        public func resolveLocationName(with location: CLLocation,
                                     completion: @escaping((String?) -> Void)){
         let geocoder = CLGeocoder()
         geocoder.reverseGeocodeLocation(location, preferredLocale: .current) { placemarks, error in
@@ -45,7 +45,7 @@ class LocationManager: NSObject, CLLocationManagerDelegate {
         }
     }
     
-    func locationManager(_ manager: CLLocationManager, didUpdateLocations locations: [CLLocation]) {
+    public func locationManager(_ manager: CLLocationManager, didUpdateLocations locations: [CLLocation]) {
         guard let location = locations.first else {
             return
         }
