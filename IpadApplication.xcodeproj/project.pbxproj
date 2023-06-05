@@ -12,12 +12,8 @@
 		AFCA95A82A2A356B001D2979 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AFCA95A62A2A356B001D2979 /* Main.storyboard */; };
 		AFCA95AA2A2A356C001D2979 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AFCA95A92A2A356C001D2979 /* Assets.xcassets */; };
 		AFCA95AD2A2A356C001D2979 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AFCA95AB2A2A356C001D2979 /* LaunchScreen.storyboard */; };
-		AFCA95B82A2A356C001D2979 /* IpadApplicationTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFCA95B72A2A356C001D2979 /* IpadApplicationTests.swift */; };
-		AFCA95C22A2A356C001D2979 /* IpadApplicationUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFCA95C12A2A356C001D2979 /* IpadApplicationUITests.swift */; };
-		AFCA95C42A2A356C001D2979 /* IpadApplicationUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFCA95C32A2A356C001D2979 /* IpadApplicationUITestsLaunchTests.swift */; };
 		AFCA95D12A2B2D90001D2979 /* IpadInformationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFCA95D02A2B2D90001D2979 /* IpadInformationViewController.swift */; };
-		AFCA95D42A2B3A9F001D2979 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AFCA95D32A2B3A9F001D2979 /* CoreLocation.framework */; };
-		AFCA95D82A2B5259001D2979 /* LocationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFCA95D72A2B5259001D2979 /* LocationManager.swift */; };
+		AFED2ECB2A2E2E600005624C /* UtilsFramework.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AFED2ECA2A2E2E5A0005624C /* UtilsFramework.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -35,6 +31,13 @@
 			remoteGlobalIDString = AFCA959C2A2A356B001D2979;
 			remoteInfo = IpadApplication;
 		};
+		AFED2EC92A2E2E5A0005624C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = AFED2EC52A2E2E5A0005624C /* UtilsFramework.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = AFED2EB72A2E2E220005624C;
+			remoteInfo = UtilsFramework;
+		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
@@ -46,13 +49,9 @@
 		AFCA95AC2A2A356C001D2979 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		AFCA95AE2A2A356C001D2979 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		AFCA95B32A2A356C001D2979 /* IpadApplicationTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = IpadApplicationTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		AFCA95B72A2A356C001D2979 /* IpadApplicationTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IpadApplicationTests.swift; sourceTree = "<group>"; };
 		AFCA95BD2A2A356C001D2979 /* IpadApplicationUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = IpadApplicationUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		AFCA95C12A2A356C001D2979 /* IpadApplicationUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IpadApplicationUITests.swift; sourceTree = "<group>"; };
-		AFCA95C32A2A356C001D2979 /* IpadApplicationUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IpadApplicationUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		AFCA95D02A2B2D90001D2979 /* IpadInformationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IpadInformationViewController.swift; sourceTree = "<group>"; };
-		AFCA95D32A2B3A9F001D2979 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
-		AFCA95D72A2B5259001D2979 /* LocationManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationManager.swift; sourceTree = "<group>"; };
+		AFED2EC52A2E2E5A0005624C /* UtilsFramework.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = UtilsFramework.xcodeproj; path = ../UtilsFramework/UtilsFramework.xcodeproj; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,7 +59,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				AFCA95D42A2B3A9F001D2979 /* CoreLocation.framework in Frameworks */,
+				AFED2ECB2A2E2E600005624C /* UtilsFramework.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -84,9 +83,8 @@
 		AFCA95942A2A356B001D2979 = {
 			isa = PBXGroup;
 			children = (
+				AFED2EC52A2E2E5A0005624C /* UtilsFramework.xcodeproj */,
 				AFCA959F2A2A356B001D2979 /* IpadApplication */,
-				AFCA95B62A2A356C001D2979 /* IpadApplicationTests */,
-				AFCA95C02A2A356C001D2979 /* IpadApplicationUITests */,
 				AFCA959E2A2A356B001D2979 /* Products */,
 				AFCA95D22A2B3A9F001D2979 /* Frameworks */,
 			);
@@ -112,34 +110,23 @@
 				AFCA95AB2A2A356C001D2979 /* LaunchScreen.storyboard */,
 				AFCA95AE2A2A356C001D2979 /* Info.plist */,
 				AFCA95D02A2B2D90001D2979 /* IpadInformationViewController.swift */,
-				AFCA95D72A2B5259001D2979 /* LocationManager.swift */,
 			);
 			path = IpadApplication;
-			sourceTree = "<group>";
-		};
-		AFCA95B62A2A356C001D2979 /* IpadApplicationTests */ = {
-			isa = PBXGroup;
-			children = (
-				AFCA95B72A2A356C001D2979 /* IpadApplicationTests.swift */,
-			);
-			path = IpadApplicationTests;
-			sourceTree = "<group>";
-		};
-		AFCA95C02A2A356C001D2979 /* IpadApplicationUITests */ = {
-			isa = PBXGroup;
-			children = (
-				AFCA95C12A2A356C001D2979 /* IpadApplicationUITests.swift */,
-				AFCA95C32A2A356C001D2979 /* IpadApplicationUITestsLaunchTests.swift */,
-			);
-			path = IpadApplicationUITests;
 			sourceTree = "<group>";
 		};
 		AFCA95D22A2B3A9F001D2979 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				AFCA95D32A2B3A9F001D2979 /* CoreLocation.framework */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		AFED2EC62A2E2E5A0005624C /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				AFED2ECA2A2E2E5A0005624C /* UtilsFramework.framework */,
+			);
+			name = Products;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -158,6 +145,8 @@
 			dependencies = (
 			);
 			name = IpadApplication;
+			packageProductDependencies = (
+			);
 			productName = IpadApplication;
 			productReference = AFCA959D2A2A356B001D2979 /* IpadApplication.app */;
 			productType = "com.apple.product-type.application";
@@ -230,8 +219,16 @@
 				Base,
 			);
 			mainGroup = AFCA95942A2A356B001D2979;
+			packageReferences = (
+			);
 			productRefGroup = AFCA959E2A2A356B001D2979 /* Products */;
 			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = AFED2EC62A2E2E5A0005624C /* Products */;
+					ProjectRef = AFED2EC52A2E2E5A0005624C /* UtilsFramework.xcodeproj */;
+				},
+			);
 			projectRoot = "";
 			targets = (
 				AFCA959C2A2A356B001D2979 /* IpadApplication */,
@@ -240,6 +237,16 @@
 			);
 		};
 /* End PBXProject section */
+
+/* Begin PBXReferenceProxy section */
+		AFED2ECA2A2E2E5A0005624C /* UtilsFramework.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = UtilsFramework.framework;
+			remoteRef = AFED2EC92A2E2E5A0005624C /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
 
 /* Begin PBXResourcesBuildPhase section */
 		AFCA959B2A2A356B001D2979 /* Resources */ = {
@@ -273,7 +280,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				AFCA95D82A2B5259001D2979 /* LocationManager.swift in Sources */,
 				AFCA95A12A2A356B001D2979 /* AppDelegate.swift in Sources */,
 				AFCA95D12A2B2D90001D2979 /* IpadInformationViewController.swift in Sources */,
 				AFCA95A32A2A356B001D2979 /* SceneDelegate.swift in Sources */,
@@ -284,7 +290,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				AFCA95B82A2A356C001D2979 /* IpadApplicationTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -292,8 +297,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				AFCA95C22A2A356C001D2979 /* IpadApplicationUITests.swift in Sources */,
-				AFCA95C42A2A356C001D2979 /* IpadApplicationUITestsLaunchTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -454,6 +457,12 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 2A4K87M2BK;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/UtilsFramework",
+					"$(PROJECT_DIR)",
+					"$(PROJECT_DIR)/IpadApplication",
+				);
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = IpadApplication/Info.plist;
 				INFOPLIST_KEY_CFBundleDisplayName = FindInfo;
@@ -483,6 +492,12 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 2A4K87M2BK;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/UtilsFramework",
+					"$(PROJECT_DIR)",
+					"$(PROJECT_DIR)/IpadApplication",
+				);
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = IpadApplication/Info.plist;
 				INFOPLIST_KEY_CFBundleDisplayName = FindInfo;

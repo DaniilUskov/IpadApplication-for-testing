@@ -48,8 +48,8 @@
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="vyR-wI-OHX">
                                 <rect key="frame" x="15" y="790" width="714" height="264"/>
                                 <subviews>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Версия IOS:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Z1M-NO-CzK" userLabel="systemVersion">
-                                        <rect key="frame" x="307.5" y="25" width="129" height="54"/>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Версия IOS major: " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Z1M-NO-CzK" userLabel="systemVersion">
+                                        <rect key="frame" x="258" y="63" width="198" height="54"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="54" id="wn1-gd-f3d"/>
                                         </constraints>
@@ -58,19 +58,25 @@
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Модель: " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XQz-0p-ATJ" userLabel="ipadModel">
-                                        <rect key="frame" x="324" y="87" width="96" height="29"/>
+                                        <rect key="frame" x="309" y="26" width="96" height="29"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="24"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Имя системы:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MU5-KB-REj" userLabel="ipadNameSystem">
-                                        <rect key="frame" x="296" y="193" width="152" height="29"/>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Версия IOS patch: " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HPo-di-Xta" userLabel="systemVersion">
+                                        <rect key="frame" x="258" y="202" width="198" height="54"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="54" id="IKu-Da-orh"/>
+                                        </constraints>
                                         <fontDescription key="fontDescription" type="system" pointSize="24"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Имя устройства:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bjp-m4-1e2" userLabel="ipadName">
-                                        <rect key="frame" x="281.5" y="140" width="181" height="29"/>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Версия IOS minor: " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Uxd-Yf-nPc" userLabel="systemVersion">
+                                        <rect key="frame" x="258" y="131" width="198" height="54"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="54" id="m1J-O2-7fU"/>
+                                        </constraints>
                                         <fontDescription key="fontDescription" type="system" pointSize="24"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
@@ -78,14 +84,15 @@
                                 </subviews>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <constraints>
-                                    <constraint firstItem="XQz-0p-ATJ" firstAttribute="centerX" secondItem="vyR-wI-OHX" secondAttribute="centerX" constant="15" id="0o0-rN-Rut"/>
-                                    <constraint firstItem="bjp-m4-1e2" firstAttribute="top" secondItem="XQz-0p-ATJ" secondAttribute="bottom" constant="24" id="2IP-pz-tlw"/>
-                                    <constraint firstItem="Z1M-NO-CzK" firstAttribute="centerX" secondItem="vyR-wI-OHX" secondAttribute="centerX" constant="15" id="N5H-Hp-csd"/>
-                                    <constraint firstItem="bjp-m4-1e2" firstAttribute="centerX" secondItem="vyR-wI-OHX" secondAttribute="centerX" constant="15" id="Vu2-GK-2M5"/>
-                                    <constraint firstItem="MU5-KB-REj" firstAttribute="centerX" secondItem="vyR-wI-OHX" secondAttribute="centerX" constant="15" id="hai-tg-K0b"/>
-                                    <constraint firstItem="XQz-0p-ATJ" firstAttribute="top" secondItem="Z1M-NO-CzK" secondAttribute="bottom" constant="8" symbolic="YES" id="rwU-jK-3PC"/>
-                                    <constraint firstItem="Z1M-NO-CzK" firstAttribute="top" secondItem="vyR-wI-OHX" secondAttribute="top" constant="25" id="xpV-a2-AGE"/>
-                                    <constraint firstItem="MU5-KB-REj" firstAttribute="top" secondItem="bjp-m4-1e2" secondAttribute="bottom" constant="24" id="yD2-rA-ygp"/>
+                                    <constraint firstItem="HPo-di-Xta" firstAttribute="centerX" secondItem="vyR-wI-OHX" secondAttribute="centerX" id="8rD-rg-ZJX"/>
+                                    <constraint firstItem="HPo-di-Xta" firstAttribute="centerX" secondItem="XQz-0p-ATJ" secondAttribute="centerX" id="ETM-OX-qS4"/>
+                                    <constraint firstItem="Uxd-Yf-nPc" firstAttribute="centerX" secondItem="HPo-di-Xta" secondAttribute="centerX" id="EsL-93-AJu"/>
+                                    <constraint firstItem="HPo-di-Xta" firstAttribute="bottom" secondItem="vyR-wI-OHX" secondAttribute="bottomMargin" id="HFd-wM-PMS"/>
+                                    <constraint firstItem="Uxd-Yf-nPc" firstAttribute="trailing" secondItem="Z1M-NO-CzK" secondAttribute="trailing" id="MOH-QQ-qcH"/>
+                                    <constraint firstItem="Uxd-Yf-nPc" firstAttribute="centerX" secondItem="Z1M-NO-CzK" secondAttribute="centerX" id="fYU-Ju-wUB"/>
+                                    <constraint firstItem="HPo-di-Xta" firstAttribute="top" secondItem="Uxd-Yf-nPc" secondAttribute="bottom" constant="17" id="kC5-No-r3V"/>
+                                    <constraint firstItem="Z1M-NO-CzK" firstAttribute="top" secondItem="XQz-0p-ATJ" secondAttribute="bottom" constant="8" symbolic="YES" id="sBd-T9-wYa"/>
+                                    <constraint firstItem="Uxd-Yf-nPc" firstAttribute="top" secondItem="Z1M-NO-CzK" secondAttribute="bottom" constant="14" id="yVV-lI-iid"/>
                                 </constraints>
                             </view>
                         </subviews>
@@ -117,10 +124,10 @@
                     <connections>
                         <outlet property="GeopositionVIew" destination="IHC-q4-q5d" id="se9-xd-DWy"/>
                         <outlet property="coordinatesInfo" destination="xjn-1k-Z0w" id="YUi-Fc-GgR"/>
-                        <outlet property="ipadName" destination="bjp-m4-1e2" id="Z3t-j4-0ha"/>
-                        <outlet property="ipadSystemName" destination="MU5-KB-REj" id="OOY-am-Esm"/>
                         <outlet property="mapInformation" destination="GIc-72-wZ9" id="QjP-0l-Cxw"/>
+                        <outlet property="minorVersion" destination="Uxd-Yf-nPc" id="dA0-gG-f2b"/>
                         <outlet property="modelInfo" destination="XQz-0p-ATJ" id="5mh-yE-FH2"/>
+                        <outlet property="patchVersion" destination="HPo-di-Xta" id="emA-il-vQH"/>
                         <outlet property="versionInfo" destination="Z1M-NO-CzK" id="xRm-6Y-rbW"/>
                     </connections>
                 </viewController>

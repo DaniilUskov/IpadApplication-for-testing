@@ -4,9 +4,10 @@
 //
 //  Created by Даниил Усков on 03.06.2023.
 //
-import CoreLocation
+
 import UIKit
 import MapKit
+import UtilsFramework
 
 class IpadInformationViewController: UIViewController, CLLocationManagerDelegate {
     
@@ -15,10 +16,8 @@ class IpadInformationViewController: UIViewController, CLLocationManagerDelegate
     @IBOutlet weak var modelInfo: UILabel!
     @IBOutlet weak var versionInfo: UILabel!
     @IBOutlet weak var coordinatesInfo: UILabel!
-    @IBOutlet weak var ipadName: UILabel!
-    @IBOutlet weak var ipadSystemName: UILabel!
-    
-    let ipadInfo: UIDevice = UIDevice()
+    @IBOutlet weak var patchVersion: UILabel!
+    @IBOutlet weak var minorVersion: UILabel!
     
     private let map:MKMapView = {
         let map = MKMapView()
@@ -69,25 +68,27 @@ class IpadInformationViewController: UIViewController, CLLocationManagerDelegate
     }
     
     func fillIpadInfo(){
+        
         if var text = modelInfo.text{
-            text += "\(ipadInfo.model)"
+            text += "\(ModelInformation.modelName)"
             modelInfo.text = text
         }
         
         if var text = versionInfo.text{
-            text += "\(ipadInfo.systemVersion)"
+            text += "\(ModelInformation.majorSystemVersion)"
             versionInfo.text = text
         }
         
-        if var text = ipadName.text{
-            text += "\(ipadInfo.name)"
-            ipadName.text = text
+        if var text = minorVersion.text{
+            text += "\(ModelInformation.minorSystemVersion)"
+            minorVersion.text = text
         }
-        
-        if var text = ipadSystemName.text{
-            text += "\(ipadInfo.systemName)"
-            ipadSystemName.text = text
+
+        if var text = patchVersion.text{
+            text += "\(ModelInformation.patchSystemVersion)"
+            patchVersion.text = text
         }
+
     }
 }
 
