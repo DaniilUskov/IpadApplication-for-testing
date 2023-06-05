@@ -457,12 +457,6 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 2A4K87M2BK;
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(inherited)",
-					"$(PROJECT_DIR)/UtilsFramework",
-					"$(PROJECT_DIR)",
-					"$(PROJECT_DIR)/IpadApplication",
-				);
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = IpadApplication/Info.plist;
 				INFOPLIST_KEY_CFBundleDisplayName = FindInfo;
@@ -492,12 +486,6 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 2A4K87M2BK;
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(inherited)",
-					"$(PROJECT_DIR)/UtilsFramework",
-					"$(PROJECT_DIR)",
-					"$(PROJECT_DIR)/IpadApplication",
-				);
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = IpadApplication/Info.plist;
 				INFOPLIST_KEY_CFBundleDisplayName = FindInfo;
